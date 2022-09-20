@@ -79,7 +79,7 @@ spring:
   datasource:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
-    url: jdbc:mysql://localhost:3306/petclinic?useSSL=false
-    username: root
-    password: petclinic
+    url: jdbc:mysql://snowpeak.mysql.database.chinacloudapi.cn:3306/petclinic?useSSL=false
+    username: snowpeak
+    password: <cWJFe-77ZM>
     initialization-mode: ALWAYS
