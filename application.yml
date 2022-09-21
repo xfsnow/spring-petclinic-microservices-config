@@ -80,6 +80,14 @@ spring:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
     url: jdbc:mysql://snowpeak.mysql.database.chinacloudapi.cn:3306/petclinic?useSSL=false
-    username: snowpeak
-    password: <cWJFe-77ZM>
     initialization-mode: ALWAYS
+
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources:
+            - name: key-vault-property-source-1
+              endpoint: https://snowpeakwebsite.vault.azure.cn/
+              credential.managed-identity-enabled: true
